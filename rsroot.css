@@ -1,10 +1,23 @@
 /*
   Robust Systems Default CSS
 */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
-  font-family: courier, monospace;
+  font-family: 'Courier Prime', monospace;
 }
 
+/* Sets height for h1 and lets us inline an image into it */
+h1 {
+  height: calc(1em + 0.5rem);
+}
+
+h1 img {
+  height: 100%;
+  display: inline;
+}
+
+/* Give some spacing above H2s */
 h2 {
   margin-top: 1em;
 }
@@ -22,6 +35,9 @@ h2 {
   border-bottom-width: 0.25em;
 }
 
+.card .heading span {
+  margin: -0.1em;
+}
 
 .menu {
   border-bottom-style: solid;
